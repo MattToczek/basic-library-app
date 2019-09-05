@@ -1,8 +1,8 @@
 <head>
   <title>Library Practice Session</title>
-  <script src = "js/book.js"></script>
-  <script src = "js/customers.js"></script>
-  <script src = "js/library.js"></script>
+  <script src = "js/Books.js"></script>
+  <script src = "js/Customers.js"></script>
+  <script src = "js/Library.js"></script>
 </head>
 
 <body>
@@ -13,11 +13,12 @@
 <script>
   // test code
 
+const library = new Library();
 
+const book = new Book('Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', '978-0439708180');
 
+const customer = new Customer('Ashley Brighton', '123@gmail.com')
 
-
-
-
+console.log(library, book, customer);
 
 </script>
