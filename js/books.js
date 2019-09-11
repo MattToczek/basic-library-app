@@ -12,7 +12,7 @@ class Book {
     this._out = blean;
     if (blean === true) {
       const twoWeeks = new Date
-      twoWeeks.setDate(twoWeeks.getDate()-14);
+      twoWeeks.setDate(twoWeeks.getDate()+14);
       this.dueDate = twoWeeks;
     } else{
       this.dueDate = null;
