@@ -6,20 +6,16 @@ class Customer {
 
   }
 
-  checkOut(Book){
-      let twoWeeks = new Date
-      twoWeeks.setDate(twoWeeks.getDate()+14);
-      this.currentBook = Book;
-      Book.out = true;
-      Book.customer = customer.name;
-      Book.dueDate = twoWeeks;
+  checkOut(book){
+      this.currentBook = book;
+      book.out = true;
+      book.customer = this.name;
   }
 
-  checkIn(Book){
+  checkIn(book){
     this.currentBook = null;
-    Book.out = false;
-    Book.customer = null;
-    Book.dueDate = null;
+    book.out = false;
+    book.customer = null;
   }
 
 }
