@@ -7,7 +7,8 @@ class Customer {
   }
 
   checkOut(Book){
-      let twoWeeks = new Date(Date.now()+12096e5);
+      let twoWeeks = new Date
+      twoWeeks.setDate(twoWeeks.getDate()+14);
       this.currentBook = Book;
       Book.out = true;
       Book.customer = customer.name;
