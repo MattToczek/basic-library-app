@@ -15,4 +15,11 @@ class Customer {
       Book.dueDate = twoWeeks;
   }
 
+  checkIn(Book){
+    this.currentBook = null;
+    Book.out = false;
+    Book.customer = null;
+    Book.dueDate = null;
+  }
+
 }
