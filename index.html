@@ -19,11 +19,11 @@ const book = new Book('Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', 
 
 const customer = new Customer('Ashley Brighton', '123@gmail.com')
 
-library.addCustomer('Johnny');
-library.addBook('The Philosopher\'s stone');
-
+library.addBook(book);
+library.addCustomer(customer);
 
 customer.checkOut(book);
+library.chargeFine();
 
 console.log(customer);
 console.log(book);
@@ -32,6 +32,7 @@ console.log('Done');
 customer.checkIn(book);
 console.log(customer);
 console.log(book);
+
 
 
 </script>
